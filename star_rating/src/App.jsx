@@ -1,13 +1,7 @@
-import "./App.css";
-import AddColor from "./components/AddColorForm.jsx";
-import ColorList from "./components/ColorList.jsx";
+import WordCount from './Hook/chepter 7/WordCount';
+
 function App() {
-  return (
-    <>
-      <AddColor />
-      <ColorList />
-    </>
-  );
+  return <WordCount>당신은 이걸 믿지 않을 것 입니다. 하지만...</WordCount>;
 }
 
 export default App;
