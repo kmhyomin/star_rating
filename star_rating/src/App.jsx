@@ -1,7 +1,12 @@
-import WordCount from './Hook/chepter 7/WordCount';
+
+import User from './Hook/chepter 7/User.jsx';
 
 function App() {
-  return <WordCount>당신은 이걸 믿지 않을 것 입니다. 하지만...</WordCount>;
+  return (
+    <>
+      <User />
+    </>
+  );
 }
 
 export default App;
