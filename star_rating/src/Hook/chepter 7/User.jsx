@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 
 const firstUser = {
   id: '0319-3233-3201',
@@ -9,7 +9,13 @@ const firstUser = {
   email: 'bwilson@mtnwilsons.com',
   admin: 'false',
 };
+
+/* 상태가 여러 하위 값으로 구성되거나 다음 상태가 이전 상태에 의존적일때, 이런 패턴이 유용하다
+    모든 팀원에게 스프레드를 가르치면 하루만 스프레드를 써먹겠지만, 모든 팀원에게
+    useReducer를 가르치면 평생 스프레드를 써먹을 수 있다.
+*/
 export default function User() {
+  // const [user, setUser] = useState(firstUser);
   const [user, setUser] = useReducer(
     (user, newDetails) => ({
       ...user,
